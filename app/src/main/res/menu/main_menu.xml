@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/feed"
+        android:icon="@drawable/ic_round_rss_feed_24"
+        android:title="@string/feed" />
+    <item
+        android:id="@+id/trash"
+        android:icon="@drawable/ic_round_delete_24"
+        android:title="@string/trash" />
+</menu>

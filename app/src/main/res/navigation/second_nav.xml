@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/second_nav.xml"
+    app:startDestination="@id/feed">
+
+    <fragment
+        android:id="@+id/feed"
+        android:name="com.app.androidtest.view.fragment.main"
+        android:label="feed" >
+        <action
+            android:id="@+id/action_feed_to_deleteImage"
+            app:destination="@id/deleteImage" />
+    </fragment>
+    <fragment
+        android:id="@+id/trash"
+        android:name="com.app.androidtest.view.fragment.trash"
+        android:label="trash" />
+    <dialog
+        android:id="@+id/deleteImage"
+        android:name="com.app.androidtest.view.bottomSheetDialogs.deleteImage"
+        android:label="deleteImage" >
+        <argument
+            android:name="product"
+            app:argType="com.app.androidtest.repo.remote.model.Product" />
+    </dialog>
+</navigation>
